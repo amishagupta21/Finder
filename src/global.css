@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+*{
+  padding:0px;
+  margin:0px;
+  box-sizing: border-box;
+}
+.container{
+  padding: 10px 10%;
+}
+
+.finder h1{
+  margin-top: 20px;
+}
+.search-field{
+  display: flex;
+   margin-top: 10px;
+   margin-bottom: 20px;
+}
+.search-field input{
+ 
+  width: 40%;
+  padding: 10px;
+ border-bottom-left-radius: 10px;
+ border-top-left-radius: 10px;
+outline: none;
+
+}
+.search-field button{
+ border: 2px solid black;
+ 
+  padding: 10px;
+  cursor: pointer;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: transparent;
+}
+.search-field button:hover{
+  opacity: 0.8;
+  background-color: black;
+  color: white;
+}
+.search-result{
+  width: 100%;
+  /* background-color: grey; */
+  padding: 10px;
+}
+.descriptive{
+   display: flex;
+    justify-content: space-between;
+   /* align-items: center; */ 
+   padding: 10px;
+}
+.descriptive h2{
+   font-size: 18px;
+   margin-bottom: 10px;
+   margin-top: 5px;
+}
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40vh;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border:2px solid blue ;
+  border-bottom: none;
+  transform: rotate(360deg);
+  animation: spin .4s infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
